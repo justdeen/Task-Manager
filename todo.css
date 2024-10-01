@@ -1,0 +1,130 @@
+html{
+    font-size: 16px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    background-image: linear-gradient(to right, rgb(23, 5, 88), rgb(49, 30, 85) );
+}
+
+h1{
+    text-align: center;
+    font-family: 'Nunito';
+    margin: 0px 0px 1rem 0px;
+}
+
+section{
+    /* border: 2px solid grey; */
+    padding: 0.94rem;
+    width: 80%;
+    border-radius: 1.25rem;
+    margin-top: 5rem;
+    padding: 3.13rem 0.94rem;
+    background-color: white;
+}
+
+input{
+    background: transparent;
+    outline: none;
+    border: none;
+    padding-top: 0.25rem;
+    padding-bottom: 0.31rem;
+    width: 80%;
+    text-decoration: none;
+}
+
+input:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+button{
+    float: right;
+    border-radius: 2.5rem;
+    outline: none;
+    border: none;
+    padding: 0.63rem 1.69rem;
+    margin-top: -0.75rem;
+    font-size: 23px;
+    background-color: orangered;
+    color: white;
+}
+
+#type{
+    background-color: rgb(211, 210, 210);
+    padding: 0.75rem 0rem;
+    padding-left: 0.94rem;
+    border-radius: 2.5rem;
+}
+
+.list-container{
+    width: 85%;
+    padding-left: 1.88rem;
+}
+
+.list{
+    margin-bottom: 1.88rem;
+    width: 70%;
+    position: relative;
+    padding-left: 2.5rem;
+    font-family: 'Nunito';
+    font-size: 0.88rem;
+}
+
+.list::before{
+    content: '';
+    border-radius: 50%;
+    height: 0.81rem;
+    width: 0.81rem;
+    position: absolute;
+    left: 0.75rem;
+    top: 0.13rem;
+    border: 1px solid grey;
+}
+
+.list.checked{
+    text-decoration: line-through;
+}
+
+.list.checked::before{
+    background-color: green;
+    border: none;
+    top: 0.19rem;
+}
+
+.list:first-of-type{
+    margin-top: 1.25rem;
+}
+
+.button1{
+    margin-top: -3.13rem;
+    padding: 0.13rem 1.13rem;
+}
+
+button:hover{
+    background-color: rgb(255, 97, 39);
+}
+
+button:active{
+    background-color: rgb(255, 68, 0);
+}
+
+.hint{
+    text-align: center;
+    margin: 0px auto;
+    font-family: 'Nunito';
+    font-size: 0.63rem;
+    margin-top: 0.63rem;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 500px){
+    input{
+        width: 70%;
+    }
+}

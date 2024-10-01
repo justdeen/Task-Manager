@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="todo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="fixed">
+        <h1>To-do List</h1>
+        <div id="type"><input type="text" id="input" placeholder="Enter a 'to-do'" autocomplete="off" required><button id="button" onclick="tap()">+</button></div>
+        <div id="list-container"></div>
+        
+    </section>
+    <div class="hint">Add tasks that auto save after you reload the page! <br> Hint: Tap on a task to cancel it.</div>
+    
+    <script src="todo.js"></script>
+</body>
+</html>
