@@ -1,7 +1,9 @@
+/* Establishing a reference point for using rem units */
 html{
     font-size: 16px;
 }
 
+/* Centering contents on the horizontal axis */
 body{
     display: flex;
     flex-direction: column;
@@ -10,14 +12,15 @@ body{
     background-image: linear-gradient(to right, rgb(23, 5, 88), rgb(49, 30, 85) );
 }
 
+/* h1 Styling */
 h1{
     text-align: center;
     font-family: 'Nunito';
     margin: 0px 0px 1rem 0px;
 }
 
+/* Styling of Main Container */
 section{
-    /* border: 2px solid grey; */
     padding: 0.94rem;
     width: 80%;
     border-radius: 1.25rem;
@@ -26,6 +29,7 @@ section{
     background-color: white;
 }
 
+/* Styling of input field */
 input{
     background: transparent;
     outline: none;
@@ -41,6 +45,7 @@ input:focus{
     box-shadow: none;
 }
 
+/* Styling of buttons */
 button{
     float: right;
     border-radius: 2.5rem;
@@ -53,6 +58,7 @@ button{
     color: white;
 }
 
+/* Styling of Container for nesting input field and button for adding tasks */
 #type{
     background-color: rgb(211, 210, 210);
     padding: 0.75rem 0rem;
@@ -60,11 +66,13 @@ button{
     border-radius: 2.5rem;
 }
 
+/* Styling of Container for Nesting tasks */
 .list-container{
     width: 85%;
     padding-left: 1.88rem;
 }
 
+/* Styling of each div for nesting a task */ 
 .list{
     margin-bottom: 1.88rem;
     width: 70%;
@@ -99,6 +107,7 @@ button{
     margin-top: 1.25rem;
 }
 
+/* Styling of button for removing a task */
 .button1{
     margin-top: -3.13rem;
     padding: 0.13rem 1.13rem;
@@ -112,6 +121,7 @@ button:active{
     background-color: rgb(255, 68, 0);
 }
 
+/* Styling of text beneath the Main Container */
 .hint{
     text-align: center;
     margin: 0px auto;
@@ -123,6 +133,7 @@ button:active{
     letter-spacing: 1px;
 }
 
+/* Media queries for phones and tablets */
 @media (max-width: 500px){
     input{
         width: 70%;
