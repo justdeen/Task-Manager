@@ -9,13 +9,13 @@ function tap(){
         return;
     }
 
-    // Creates a new div and nests the added task each time a task is added
+    // Creates a new div which nests the added task each time a task is added
     let list = document.createElement('div')
     list.innerHTML = input.value
     listContainer.appendChild(list)
     list.className = 'list'
 
-    // Creates a new button used for removing the task created above this block of code
+    // Creates a new button (used for removing a task) each time a task is added
     let button1 = document.createElement('button');
     button1.innerHTML = '-'
     listContainer.appendChild(button1);
@@ -25,7 +25,7 @@ function tap(){
     saveData();
 }
 
-// Listens for when the task or the button associated that task is clicked
+// Listens for when the task or the button associated to that task is clicked
 listContainer.addEventListener('click', function(e){
 
     // Toggles the custom css 'checked' class assigned to each task when a task is clicked
