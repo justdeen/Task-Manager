@@ -9,7 +9,7 @@ Each time the "+" is clicked, the code nested in the onclick function is execute
 
 
 ## 🗑 Crossing Out and Removing Tasks
-### 🎈 1. Crossing Out Tasks
+### 1. Crossing Out Tasks
 I used the "::before" CSS pseudo element to create a circle using a border on the left-hand side of each task which will be filled with a green color and cross out the task whenever it is clicked or whenever the task itself is clicked, using a custom CSS class (named "checked") which I assigned to the task itself and the circle (which I created using the "::before" pseudo element).
 
 To implement the cross out feature and fill the circle with a green color when the circle on the left side of the task is clicked or the task itself is clicked, I used JavaScript to toggle the class on and off through the use of an eventlistener in my js code which listens for when the task in the listContainer (storing the added task and its button) is clicked using;
@@ -27,7 +27,7 @@ To implement the cross out feature and fill the circle with a green color when t
 The code above is nested in the "if" command inside the eventlistener and the the "if" command checks if the div element was clicked (each div element stores a task) and if it this is true then the custom "checked" class which I assigned to the "::before" circle element and the task will be toggled on or off depending on whether the class was previously on or off (the terms "on" or "off" simply refer to "adding" or "removing" the class).
 
 
-### 🎈 2. Removing Tasks;
+### 2. Removing Tasks;
 The eventlistener also listens for when the button for each task is clicked and if this is true (using the "else if" command) then the task will be removed from the container using the following syntax;
 
     e.target.previousSiblingElement.remove();
@@ -42,7 +42,7 @@ Syntax Breakdown;
 ## 📦 Storing Changes Made to Each Task
 I created 2 separate functions for storing the changes made to tasks and retaining these changes when the page is reloaded. 
 
-### 🎈 1. Function for storing changes;
+### 1. Function for storing changes;
 
     Function saveItem(){
     localStorage.saveItem("data", listContainer)
@@ -59,7 +59,7 @@ This function essentially uses a key-value pair to retrieve the data provided by
 Whenever this function is called, it simply stores the contents in the container (list-container) that nests the tasks and thier respective buttons, in a key named "data". This function is called whenever a task has been added, crossed out or removed. 
 
 
-### 🎈 2. Function for displaying the changes after the page is reloaded;
+### 2. Function for displaying the changes after the page is reloaded;
 
     Function getItem(){
     listContainer = localStorage.getItem("data")
