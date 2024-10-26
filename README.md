@@ -1,3 +1,5 @@
+![Notes_241026_130623_743](https://github.com/user-attachments/assets/c2b5b3be-f46f-479b-a0d6-857f97f7d196)
+
 # 💫 Overview
 An input has to be provided to the input field before a task can be added. Existing tasks can be crossed out or removed and users are provided with visual feedbacks to enhance the user experience. 
 
