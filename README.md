@@ -69,14 +69,14 @@ This function is called whenever the page is loaded or reloaded and it is the la
 It simply reassigns the contianer variable to the contents stored in the key called "data" which simply consists of the changes made to each task (if any) and retains the added tasks. This enables the user to revisit the website and retain changes made to the website. 
 
 
-## 🌈📱 User Interface 
+# 🌈📱 User Interface 
 1. Theme - colourful
 2. Buttons - finger-friendly rounded edges 
 3. containers - rounded edges
 4. Text - white and black texts on contrasting backgrounds 
 
 
-## 🥂 Stack
+# 🥂 Stack
 1. HTML
 2. CSS
 3. JavaScript
