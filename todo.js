@@ -44,11 +44,11 @@ listContainer.addEventListener('click', function(e){
 
 // Function for saving data in local storage using a key-value pair
 function saveData(){
-    localStorage.setItem("data", listContainer.innerHTML);
+    localStorage.setItem("data1", listContainer.innerHTML);
 }
 
 // Function for displaying the changes made to the website
 function showTask(){
-    listContainer.innerHTML = localStorage.getItem("data");
+    listContainer.innerHTML = localStorage.getItem("data1");
 }
 showTask();
